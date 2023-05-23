@@ -1,0 +1,78 @@
+
+.story_items{
+    display: flex;
+    flex-direction: row;
+    width: 680px;
+    overflow-x: hidden;
+}
+.story_item{
+    font-size: 13px;
+    text-align: center;
+    color: aliceblue;
+}
+.story_item:hover{
+    cursor: pointer;
+}
+.story_img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+ 
+    margin-top: 30px;
+    justify-content: space-between;
+    border: 3px solid red;
+}
+.story_img:hover{
+    cursor: pointer;
+}
+.story_img p{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* ------midea quary start------ */
+@media (min-width:376px)and(max-width: 1000px){
+    .story_items{
+     align-items:center;
+     margin-left:50px;
+     width: 560px;
+     
+    }
+    .story_img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 25px;
+     
+        margin-top: 30px;
+        justify-content: space-between;
+        border: 3px solid red;
+        
+    }
+}
+@media(max-width:375px){
+    .timeline_left{
+        margin: 0px;
+    }
+    .story_items{
+        align-items:center;
+        margin-right:30px;
+        max-width: 370px;
+        overflow-x: hidden;
+        
+       }
+    .story_img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        align-self: center;
+     margin-left: 15px;
+        margin-top: 30px;
+        justify-content: space-between;
+        border: 3px solid red;
+        
+    }
+}

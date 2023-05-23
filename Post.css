@@ -1,0 +1,159 @@
+.post {
+    width: 550px;
+    margin: 30px 40px 50px 40px;
+}
+
+.post_header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.post_headerAuthor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bolder;
+
+}
+
+span {
+    margin-left: 5px;
+}
+
+#post_img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.post_headerAuthor span {
+    color: gray;
+    font-size: 15px;
+}
+
+.post_image img {
+    width: 100%;
+    border-radius: 6px;
+    border: 0.6px solid rgba(128, 128, 128, 0.516);
+}
+
+.post_footer {}
+
+.post_footerIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postIcon {
+    cursor: pointer;
+    padding: 7px;
+    margin: 3px;
+
+
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.like_cmt {
+    display: flex;
+    flex-direction: column;
+}
+
+.like_cmt span {
+    color: gray;
+}
+
+.fa-lg:hover {
+    cursor: pointer;
+}
+
+@media  (min-width:376px)and(max-width:600) {
+    .post {
+        width: 400px;
+        margin: 20px 30px 40px 30px;
+       
+    }
+    .post_image img {
+        width: 100%;
+        border-radius: 5px;
+        border: 0.4px solid rgba(128, 128, 128, 0.516);
+        
+    }
+
+}
+@media(max-width:375px){
+    *{
+        -ms-zoom-animation: none;
+    }
+    .post {
+        margin: auto;
+        width: 300px;
+        /* margin: 10px 20px 30px 20px; */
+        align-items: center;
+       
+    }
+    .post_image  {
+        width: 100%;
+        border-radius: 3px;
+        border: 0.3px solid rgba(128, 128, 128, 0.516);
+        /* height: 300px; */
+        /* width: 300px; */
+        
+    }
+    .post_header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 3px;
+        /* align-items: center; */
+    }
+    
+    .post_footerIcons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .postIcon {
+        cursor: pointer;
+        padding: 3px;
+        margin: 2px;
+       
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .post_iconSave{
+        display: flex;
+        margin-right: 0px;
+    }
+    span {
+        margin-left: 1px;
+        font-size: 10px;
+    }
+    .like_cmt {
+        display: flex;
+        flex-direction: column;
+    }
+    .post_headerAuthor span {
+        color: gray;
+        font-size: 16px;
+        margin-bottom: 2px;
+        padding: 8px;
+    }
+    .post_iconMain{
+        display: flex;
+        flex-direction: row;
+    }
+   
+    /* .post_footerIcons{
+        display: flex;
+        justify-content: space-around;
+    } */
+}
